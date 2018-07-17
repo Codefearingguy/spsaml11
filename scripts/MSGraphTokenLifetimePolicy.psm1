@@ -328,7 +328,7 @@ function InvokeMSGraphAPI($uri, $HttpMethod = "GET", $body = "")
     $parameters = @{
         "Method" = $HttpMethod;
         "Uri" = $uri;
-        "Headers" = @{"Authorization"=$authHeader; "Content-Type"="application/json"};
+        "Headers" = @{"Authorization"=$authHeader; "Content"="application/json"};
     }
 
     if($bodyMethods -contains $HttpMethod)
